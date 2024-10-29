@@ -15,13 +15,10 @@
        <div class="main">
             <div class="pages-top">
                 <a class="pointer" href="/"> 
-                    <img 
-                    src="../assets/logo.svg"
-                    width="220"
-                    height="120"
-                    />
+                    <img src="../assets/logo.svg" width="220" height="120" />
                 </a>
-                <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <nav class="navbar">
                     <a class="nav-element selected-nav-element pointer" href="/">HOME</a>
                     <a class="nav-element pointer" href="pages/page1.html">OPERE 1990-99</a>
                     <a class="nav-element pointer">OPERE 2000-2009</a>
@@ -128,5 +125,12 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+        
 </body>
 </html>

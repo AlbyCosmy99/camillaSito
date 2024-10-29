@@ -222,6 +222,37 @@ a {
     text-decoration: none;
 }
 
+.pages-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-element {
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 1rem;
+    text-decoration: none;
+    padding-top: 3rem;
+    width: 12rem;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav-element:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
 @media (max-width: 768px) { 
     .image {
         width: 100%;
@@ -268,4 +299,33 @@ a {
         text-align: center;
         padding-bottom: 3rem;
     }
+    .pages-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
 }
+
+
+
+
