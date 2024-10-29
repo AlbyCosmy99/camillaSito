@@ -159,6 +159,10 @@ p {
     padding-bottom: 2.5rem;
 }
 
+.footer-options {
+    display: flex;
+} 
+
 .footer-option {
     display: inline-block;
     padding: 1.5rem;
