@@ -145,7 +145,7 @@ p {
 
 .footer-container {
     background-color: var(--main-color);
-    height: 25rem;
+    height: 24rem;
     display: flex;
     justify-content: center;
     padding-bottom: 2.5rem;
@@ -180,4 +180,26 @@ p {
 .main-image-container .image img {
     width: 30rem;
     height: 25rem;
+}
+
+.relative {
+    position: relative;;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bottom-img {
+    bottom: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
