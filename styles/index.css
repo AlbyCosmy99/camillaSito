@@ -124,7 +124,7 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -38rem;
+    bottom: -35rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -134,8 +134,11 @@ p {
 }
 
 .home-icons {
-    text-align: center;
     margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .footer{
@@ -250,5 +253,19 @@ a {
     }
     .lastAlignedImage {
         margin-bottom: 0;
+    }
+    .home-icons {
+        flex-wrap: wrap;
+    }
+    #main-form {
+        position: static;
+        margin: 1rem;
+    }
+    .main-bottom {
+        height: 2vh;
+    }
+    .presentation {
+        text-align: center;
+        padding-bottom: 3rem;
     }
 }
