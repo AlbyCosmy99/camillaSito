@@ -253,6 +253,10 @@ a {
     text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .menu-toggle {
     display: none;
     font-size: 2rem;
