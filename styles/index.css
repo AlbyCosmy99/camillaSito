@@ -288,6 +288,7 @@ a {
     }
     .home-icons {
         flex-wrap: wrap;
+        margin-bottom: 4rem;
     }
     #main-form {
         position: static;
@@ -337,6 +338,10 @@ a {
     }
     .footer-container {
         height: 12rem;
+    }
+    .home-boxes-container {
+        position: static;
+        transform: translateX(0);
     }
 }
 
