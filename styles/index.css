@@ -281,6 +281,7 @@ a {
     .footer-options {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
     .lastAlignedImage {
         margin-bottom: 0;
@@ -291,6 +292,7 @@ a {
     #main-form {
         position: static;
         margin: 1rem;
+        padding: 2rem;
     }
     .main-bottom {
         height: 2vh;
@@ -323,6 +325,18 @@ a {
 
     .navbar.active {
         display: flex;
+    }
+    .main {
+        padding-right: 1rem;
+    }
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-container {
+        height: 12rem;
     }
 }
 
