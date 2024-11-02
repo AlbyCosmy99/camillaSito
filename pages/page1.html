@@ -117,5 +117,14 @@
             navbar.classList.toggle('active');
         }
     </script>
+    <script>
+        document.addEventListener('click', (e) => {
+            const navbar = document.querySelector('.navbar');
+            const toggle = document.querySelector('.menu-toggle')
+            if(e.target != toggle && !navbar.contains(e.target)) {
+                navbar.classList.remove('active');
+            }
+        })
+    </script>
 </body>
 </html>
