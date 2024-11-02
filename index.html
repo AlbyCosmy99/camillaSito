@@ -21,8 +21,8 @@
                 <nav class="navbar">
                     <a class="nav-element selected-nav-element pointer" href="/">HOME</a>
                     <a class="nav-element pointer" href="pages/page1.html">OPERE 1990-99</a>
-                    <a class="nav-element pointer">OPERE 2000-2009</a>
-                    <a class="nav-element pointer">OPERE 2010-2015</a>
+                    <a class="nav-element pointer" href="pages/page2.html">OPERE 2000-2009</a>
+                    <a class="nav-element pointer" href="pages/page3.html">OPERE 2010-2015</a>
                 </nav>
             </div>
             <div class="presentation">
@@ -146,6 +146,15 @@
             const navbar = document.querySelector('.navbar');
             navbar.classList.toggle('active');
         }
-    </script> 
+    </script>
+    <script>
+        document.addEventListener('click', (e) => {
+            const navbar = document.querySelector('.navbar');
+            const toggle = document.querySelector('.menu-toggle')
+            if(e.target != toggle && !navbar.contains(e.target)) {
+                navbar.classList.remove('active');
+            }
+        })
+    </script>
 </body>
 </html>
